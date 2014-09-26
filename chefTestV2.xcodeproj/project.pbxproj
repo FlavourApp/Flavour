@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		805FC0E919D3882D00C22D16 /* bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 805FC0E819D3882D00C22D16 /* bg.jpg */; };
+		805FC0EF19D5B62000C22D16 /* FailedLoadingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 805FC0EE19D5B62000C22D16 /* FailedLoadingViewController.m */; };
 		80A6F64119D107D4006F9D0C /* LoadingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80A6F64019D107D4006F9D0C /* LoadingViewController.m */; };
 		80C6077919C74F5300F9803A /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80C6077819C74F5300F9803A /* FacebookSDK.framework */; };
 		80C6077F19C758BD00F9803A /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80C6077E19C758BD00F9803A /* LoginViewController.m */; };
-		80C6078119C763F400F9803A /* bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 80C6078019C763F400F9803A /* bg.jpg */; };
-		80C6078319C7676300F9803A /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 80C6078219C7676300F9803A /* logo.png */; };
 		80D5544619B3E13800BDD97B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80D5544519B3E13800BDD97B /* Foundation.framework */; };
 		80D5544819B3E13800BDD97B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80D5544719B3E13800BDD97B /* CoreGraphics.framework */; };
 		80D5544A19B3E13800BDD97B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80D5544919B3E13800BDD97B /* UIKit.framework */; };
@@ -50,13 +50,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		805FC0E819D3882D00C22D16 /* bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bg.jpg; sourceTree = "<group>"; };
+		805FC0ED19D5B62000C22D16 /* FailedLoadingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FailedLoadingViewController.h; sourceTree = "<group>"; };
+		805FC0EE19D5B62000C22D16 /* FailedLoadingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FailedLoadingViewController.m; sourceTree = "<group>"; };
 		80A6F63F19D107D3006F9D0C /* LoadingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadingViewController.h; sourceTree = "<group>"; };
 		80A6F64019D107D4006F9D0C /* LoadingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadingViewController.m; sourceTree = "<group>"; };
 		80C6077819C74F5300F9803A /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
 		80C6077D19C758BD00F9803A /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		80C6077E19C758BD00F9803A /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
-		80C6078019C763F400F9803A /* bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bg.jpg; sourceTree = "<group>"; };
-		80C6078219C7676300F9803A /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		80D5544219B3E13800BDD97B /* chefTestV2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = chefTestV2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80D5544519B3E13800BDD97B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		80D5544719B3E13800BDD97B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -164,6 +165,8 @@
 				80C6077E19C758BD00F9803A /* LoginViewController.m */,
 				80A6F63F19D107D3006F9D0C /* LoadingViewController.h */,
 				80A6F64019D107D4006F9D0C /* LoadingViewController.m */,
+				805FC0ED19D5B62000C22D16 /* FailedLoadingViewController.h */,
+				805FC0EE19D5B62000C22D16 /* FailedLoadingViewController.m */,
 				80D5546019B3E13800BDD97B /* Images.xcassets */,
 				80D5544C19B3E13800BDD97B /* Supporting Files */,
 			);
@@ -203,8 +206,7 @@
 		80D5548019B3E4C300BDD97B /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				80C6078219C7676300F9803A /* logo.png */,
-				80C6078019C763F400F9803A /* bg.jpg */,
+				805FC0E819D3882D00C22D16 /* bg.jpg */,
 				80D5548F19B3FCDA00BDD97B /* food1.jpg */,
 				80D5549019B3FCDA00BDD97B /* food2.jpg */,
 				80D5549119B3FCDA00BDD97B /* food3.jpg */,
@@ -296,11 +298,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				80C6078119C763F400F9803A /* bg.jpg in Resources */,
+				805FC0E919D3882D00C22D16 /* bg.jpg in Resources */,
 				80D5549619B3FCDA00BDD97B /* food4.jpg in Resources */,
 				80D5545C19B3E13800BDD97B /* Main_iPad.storyboard in Resources */,
 				80D5548619B3E4C300BDD97B /* Sergei.jpg in Resources */,
-				80C6078319C7676300F9803A /* logo.png in Resources */,
 				80D5548519B3E4C300BDD97B /* Demian.jpg in Resources */,
 				80D5549319B3FCDA00BDD97B /* food1.jpg in Resources */,
 				80D5549519B3FCDA00BDD97B /* food3.jpg in Resources */,
@@ -330,6 +331,7 @@
 			files = (
 				80D5548E19B3F96F00BDD97B /* DetailViewController.m in Sources */,
 				80D5545619B3E13800BDD97B /* AppDelegate.m in Sources */,
+				805FC0EF19D5B62000C22D16 /* FailedLoadingViewController.m in Sources */,
 				80C6077F19C758BD00F9803A /* LoginViewController.m in Sources */,
 				80A6F64119D107D4006F9D0C /* LoadingViewController.m in Sources */,
 				80D5548919B3E5C500BDD97B /* TableViewCell.m in Sources */,

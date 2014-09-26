@@ -6,6 +6,6 @@ urlpatterns = [
     url(r'^$', views.index, name='index'),
     url(r'^chefs/$', views.chefs, name='chefs'),
     url(r'^mainView/$', views.mainView, name='mainView'),
-
+    url(r'^addConsumer/$', views.addConsumer, name='addConsumer'),
 
 ]

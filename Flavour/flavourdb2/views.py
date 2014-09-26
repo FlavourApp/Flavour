@@ -39,7 +39,32 @@ def mainView(request):
 
 	return HttpResponse(json.dumps(response_data), content_type="application/json")
 
+def addConsumer(request):
 
+	print request.POST
+	name = request.POST.get('name')
+	lastname = request.POST.get('lastname')
+	address = request.POST.get('address')
+	phone = request.POST.get('phone')
+	FBID = request.POST.get('FBID')
+	email = request.POST.get('email')
+	comuna = request.POST.get('comuna')
+	print comuna
+	comuna = Comuna.objects.filter(name=comuna)[0]
+	
+	consumer = Consumer(
+		name=name,
+		lastname=lastname,
+		address=address,
+		phone=phone,
+		FBID = FBID,
+		email=email,
+		comuna=comuna)
+	try:
+		consumer.save()	
+	except Exception:
+		return HttpResponse("failed")
+	return HttpResponse("ok")
 
 def chefs(request):
 

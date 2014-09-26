@@ -64,6 +64,9 @@
         tableViewController.Description = [NSMutableArray arrayWithArray: _Description];
         tableViewController.Images = [NSMutableArray arrayWithArray:_Images];
     }
+    else if([[segue identifier] isEqualToString:@"loadingFailure"]) {
+        
+    }
 }
 
 
@@ -78,6 +81,7 @@
 - (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error {
     NSLog(@"didFailWithError");
     NSLog([NSString stringWithFormat:@"Connection failed: %@", [error description]]);
+    [self performSegueWithIdentifier:@"loadingFailure" sender:self];
 }
 - (void)connectionDidFinishLoading:(NSURLConnection *)connection {
     NSLog(@"connectionDidFinishLoading");
