@@ -118,10 +118,17 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="dtY-Ql-XcK">
                                 <rect key="frame" x="-15" y="0.0" width="335" height="575"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j1E-T3-oJY" customClass="GPPSignInButton">
+                                <rect key="frame" x="103" y="349" width="115" height="50"/>
+                                <state key="normal" image="gpp signin.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="signInButton" destination="j1E-T3-oJY" id="CKI-Sz-GOM"/>
                         <segue destination="gD0-L1-Kpw" kind="modal" identifier="loginSuccess" animates="NO" id="P7I-hW-sa6"/>
                     </connections>
                 </viewController>
@@ -234,6 +241,7 @@
     </scenes>
     <resources>
         <image name="bg.jpg" width="3000" height="4552"/>
+        <image name="gpp signin.png" width="93" height="48"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
@@ -241,6 +249,6 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="qh9-EH-onf"/>
+        <segue reference="P7I-hW-sa6"/>
     </inferredMetricsTieBreakers>
 </document>

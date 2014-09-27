@@ -8,8 +8,11 @@
 
 #import "AppDelegate.h"
 #import <FacebookSDK/FacebookSDK.h>
+#import <GooglePlus/GooglePlus.h>
 
 @implementation AppDelegate
+
+
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
@@ -50,11 +53,25 @@
          annotation:(id)annotation {
     
     // Call FBAppCall's handleOpenURL:sourceApplication to handle Facebook app responses
-    BOOL wasHandled = [FBAppCall handleOpenURL:url sourceApplication:sourceApplication];
+    if([FBAppCall handleOpenURL:url sourceApplication:sourceApplication])
+    {
+        return YES;
+    }
+    else if([GPPURLHandler handleURL:url
+              sourceApplication:sourceApplication
+                     annotation:annotation])
+    {
+        return YES;
+    }
+    else
+    {
+        return NO;
+    }
     
     // You can add your app-specific url handling code here if needed
     
-    return wasHandled;
+    
 }
+
 
 @end
